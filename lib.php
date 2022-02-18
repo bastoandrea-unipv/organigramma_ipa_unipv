@@ -2,6 +2,7 @@
 
 class Tree {
     public $file="ipa.json";
+    public $uoTemp = array();
 
     public function __construct($file) {
     	$this->file = $file;
@@ -50,6 +51,17 @@ class Tree {
 	}
     }
 
+    function getChild ($array) {
+	$out=$this->readJson("6",$array[4]);	
+	if ($out) {
+		foreach ($out as $o) {
+			array_push($this->uoTemp,$o);
+			$this->getChild($o,$this->uoTemp);	
+		}
+	}
+	return $this->uoTemp;
+    }
+
     function getUO ($array,$key,$value) {
 	$out=array();
 	foreach ($array as $arr) {
@@ -79,7 +91,7 @@ class Tree {
 	return $out;
     }
 
-    function XprintCard ($array) {
+    function printCardShort ($array) {
        $out='
             <div class="card" title="'.$array[4].'">
                 <div class="card-body">
