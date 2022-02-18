@@ -83,6 +83,7 @@ function showHide(id,fromId,xx) {
 <ul class="nav nav-tabs mb-4" role="tablist" id="myTab">
   <li class="nav-item" role="presentation"><button class="nav-link active" href="#catalogo" id="catalogo-tab" data-bs-toggle="tab" data-bs-target="#catalogo" type="button" role="tab" aria-controls="catalogo" aria-selected="true" onclick="location.href='index.php?view=list'"><i class="fa fa-list fa-2x" aria-hidden="true"></i></button></li>
   <li class="nav-item" role="presentation"><button class="nav-link" href="#lista" id="lista-tab" data-bs-toggle="tab" data-bs-target="#lista" type="button" role="tab" aria-controls="lista" aria-selected="false" onclick="location.href='index.php?view=chart'"><i class="fa fa-sitemap fa-2x" aria-hidden="true"></i></button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" href="#table" id="table-tab" data-bs-toggle="tab" data-bs-target="#table" type="button" role="tab" aria-controls="table" aria-selected="false" onclick="location.href='index.php?view=table'"><i class="fa fa-table fa-2x" aria-hidden="true"></i></button></li>
 </ul>
 
 </div>

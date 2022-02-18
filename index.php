@@ -35,6 +35,10 @@ if (isset($params['view']) ) {
 			require("grid.php");
 		}
 
+	} elseif ($params['view'] == "table") {
+
+			require("table.php");
+
 	} elseif ($params['view'] == "list") {
 
 		if (isset($params['getUO']) && strlen($params['getUO']) == 6) {

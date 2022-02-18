@@ -27,13 +27,6 @@
 
         google.charts.load('current', {'packages' : ['orgchart', 'table']});
         google.charts.setOnLoadCallback(function() { initialize('') });
-<?php 
-//require_once("lib.php");
-//$ipa_unipv = new Tree("array.json");
-//$bigArray=$ipa_unipv->readJson();
-//$aa=$ipa_unipv->getUO($bigArray,'6','XZFQJ8');
-//$aa=$ipa_unipv->readJson();
-?>
 
         function initialize() {
 
@@ -125,6 +118,7 @@
 <ul class="nav nav-tabs mb-4" role="tablist" id="myTab">
   <li class="nav-item" role="presentation"><button class="nav-link" href="#catalogo" id="catalogo-tab" data-bs-toggle="tab" data-bs-target="#catalogo" type="button" role="tab" aria-controls="catalogo" aria-selected="true" onclick="window.location.replace('index.php?view=list')"><i class="fa fa-list fa-2x" aria-hidden="true"></i></button></li>
   <li class="nav-item" role="presentation"><button class="nav-link active" href="#lista" id="lista-tab" data-bs-toggle="tab" data-bs-target="#lista" type="button" role="tab" aria-controls="lista" aria-selected="false" onclick="location.href='index.php?view=chart'"><i class="fa fa-sitemap fa-2x" aria-hidden="true"></i></button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" href="#table" id="table-tab" data-bs-toggle="tab" data-bs-target="#table" type="button" role="tab" aria-controls="table" aria-selected="false" onclick="location.href='index.php?view=table'"><i class="fa fa-table fa-2x" aria-hidden="true"></i></button></li>
 </ul>
 
 </div>
